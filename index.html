@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="https://kit.fontawesome.com/6450fc700a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>SmartAlaba</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar container">
+        <img id="logo" src="/images/logo.PNG" alt="logo" />
+        <ul>
+          <a href="#"><li>HOME</li></a>
+          <a href="#choice"><li>WHY CHOOSE US</li></a>
+          <a href="#how"><li>HOW IT WORKS</li></a>
+          <a href="#form"><li>CONTACT</li></a>
+        </ul>
+        <div id="hamburger-menu">
+          <div id="line1"></div>
+          <div id="line2"></div>
+          <div id="line3"></div>
+        </div>
+      </div>
+
+      <div class="showcase-body container">
+        <div class="info">
+          <h1>
+            Order ITEMS from <span style="color: #c43e0d">Europe</span> and
+            <span style="color: #c43e0d">America</span>
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In possimus
+            alias qui quis modi perspiciatis, neque, dicta fugit temporibus
+            repellat nihil. Sequi, quas et? Voluptatibus consectetur sint maxime
+            ut omnis.
+          </p>
+          <a href="#form"><button>Order Enquiry</button></a>
+        </div>
+        <div class="tools">
+          <img src="/images/first_img.png" alt="tools" />
+        </div>
+      </div>
+    </header>
+    <section id="choice">
+      <h2>Why Choose Us?</h2>
+      <div class="container">
+        <div class="choice-item">
+          <i class="far fa-thumbs-up fa-3x"></i>
+          <div>Lorem, ipsum dolor.</div>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="choice-item">
+          <i class="fas fa-dollar-sign fa-3x"></i>
+          <div>Lorem, ipsum dolor.</div>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="choice-item">
+          <i class="far fa-smile fa-3x"></i>
+          <div>Lorem, ipsum dolor.</div>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
+    </section>
+    <section id="how">
+      <h2>How It Works</h2>
+      <div class="container">
+        <div>
+          <img src="/images/mechanic.jpg" alt="mechanic" />
+        </div>
+        <div>
+          <div class="how-item">
+            <i class="far fa-edit"></i>
+            <div>
+              <p>Fill enquiry form and provide:</p>
+              <ul>
+                <li>VIN or chassis number for car parts.</li>
+                <li>Make and model for specialist equipment/machinery.</li>
+                <li>
+                  Brand and picture showing product name for other goodsMake
+                  payment for order enquiry.
+                </li>
+                <li>
+                  Pay non-refundable enquiry fee of ₦2000 (deducted from final
+                  cost if order placed).
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="how-item">
+            <i class="far fa-edit"></i>
+            <div>
+              <p>Fill enquiry form and provide:</p>
+              <ul>
+                <li>VIN or chassis number for car parts.</li>
+                <li>Make and model for specialist equipment/machinery.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="how-item">
+            <i class="far fa-edit"></i>
+            <div>
+              <p>Fill enquiry form and provide:</p>
+              <ul>
+                <li>VIN or chassis number for car parts.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-form container">
+      <div class="contact">
+        <h3>Find Us</h3>
+        <p>30 Weatheral Road, Owerri Imo State</p>
+        <h3 style="margin-top: 1rem;">General Enquiries</h3>
+        <p style="margin-bottom: 0.7rem;">
+          <i class="fas fa-phone"></i>&nbsp; Phone: +234 808568 0969
+        </p>
+        <p>
+          <i class="fas fa-envelope-square"></i>&nbsp; Email:
+          <span style="color: #c4330d"></span>info@smartalaba.com
+        </p>
+      </div>
+
+      <form id="form">
+        <h3>Order Form</h3>
+        <div class="leftnright">
+          <div class="left">
+            <div>
+              <input type="text" placeholder="Enter your full name" required />
+            </div>
+            <div>
+              <input type="text" placeholder="Enter your phone number" />
+            </div>
+            <div>
+              <input type="text" placeholder="Enter your product name" />
+            </div>
+          </div>
+          <div class="right">
+            <div>
+              <input type="email" placeholder="Enter your email" />
+            </div>
+            <div>
+              <input type="text" placeholder="Enter your home address" />
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <textarea placeholder="Enter product description"></textarea>
+        </div>
+        <button>Submit</button>
+      </form>
+    </section>
+    <footer>
+      Copyright &copy; Digifigs Ltd. 2020
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      // Smooth Scrolling
+      $('a').on('click', function(event) {
+        if (this.hash !== '') {
+          event.preventDefault()
+
+          const hash = this.hash
+
+          $('html, body').animate(
+            {
+              scrollTop: $(hash).offset().top - 100
+            },
+            800
+          )
+        }
+      })
+
+        const ham = document.getElementById('hamburger-menu')
+        const navLinks = document.querySelector('.navbar ul')
+
+        ham.addEventListener('click', () => {
+          navLinks.classList.toggle('show-navlinks')
+          ham.classList.toggle('toggle')
+        })
+
+    </script>
+  </body>
+</html>
