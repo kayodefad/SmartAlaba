@@ -9,6 +9,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="accordion.css" />
     <title>SmartAlaba</title>
   </head>
   <body>
@@ -47,6 +48,9 @@
         </div>
       </div>
     </header>
+
+    <!-- Why Choose Us -->
+
     <section id="choice">
       <h2>Why Choose Us?</h2>
       <div class="container">
@@ -67,6 +71,9 @@
         </div>
       </div>
     </section>
+
+    <!-- How It Works -->
+
     <section id="how">
       <h2>How It Works</h2>
       <div class="container">
@@ -115,17 +122,58 @@
       </div>
     </section>
 
+    <!-- Frequently asked Questions -->
+
+    <section class="faqs container" style="margin-bottom: 5rem;">
+    <button class="accordion">How do I pay for my order</button>
+    <div class="panel">
+      <p>
+        Payments are received in Naira via direct online bank transfers or card payments.
+      </p>
+    </div>
+
+    <button class="accordion">Can I track my order?</button>
+    <div class="panel">
+      <p>
+        Yes. A confirmation email and tracking ID will be generated for each successfully processed order. These can be used for order tracking.
+      </p>
+    </div>
+
+    <button class="accordion">When will I receive my order?</button>
+    <div class="panel">
+      <p>
+        We aim to deliver all orders between 10 to 14 days except for specialized equipment or products.
+      </p>
+    </div>
+
+    <button class="accordion">What if I don't receive my order within 14 days?</button>
+    <div class="panel">
+      <p>
+        Estimated delivery date provided with all quotes. Prompt notification provided for any unforeseen delay to orders.
+      </p>
+    </div>
+
+    <button class="accordion">What is your return policy</button>
+    <div class="panel">
+      <p>
+        All items except household goods can be returned within 7 days of receipt in their original packaging at a cost to the buyer.
+      </p>
+    </div>
+
+    </section>
+
+    <!-- Contact Us -->
     <section class="contact-form container">
       <div class="contact">
         <h3>Find Us</h3>
-        <p>30 Weatheral Road, Owerri Imo State</p>
+        <p>30 Lorem ipsum dolor sit amet consectetur adipisicing.</p>
         <h3 style="margin-top: 1rem;">General Enquiries</h3>
         <p style="margin-bottom: 0.7rem;">
-          <i class="fas fa-phone"></i>&nbsp; Phone: +234 808568 0969
+          <i class="fas fa-phone"></i>&nbsp; Phone: +234 900000 0000
         </p>
         <p>
           <i class="fas fa-envelope-square"></i>&nbsp; Email:
-          <span style="color: #c4330d"></span>info@smartalaba.com
+          <span style="color: #c4330d"></span>info@johndoe.com
         </p>
       </div>
 
@@ -137,30 +185,30 @@
               <input type="text" placeholder="Enter your full name" required />
             </div>
             <div>
-              <input type="text" placeholder="Enter your phone number" />
+              <input type="text" placeholder="Enter your phone number" required />
             </div>
             <div>
-              <input type="text" placeholder="Enter your product name" />
+              <input type="text" placeholder="Enter your product name" required />
             </div>
           </div>
           <div class="right">
             <div>
-              <input type="email" placeholder="Enter your email" />
+              <input type="email" placeholder="Enter your email" required />
             </div>
             <div>
-              <input type="text" placeholder="Enter your home address" />
+              <input type="text" placeholder="Enter your home address" required />
             </div>
           </div>
         </div>
 
         <div>
-          <textarea placeholder="Enter product description"></textarea>
+          <textarea placeholder="Enter product description" required></textarea>
         </div>
         <button>Submit</button>
       </form>
     </section>
     <footer>
-      Copyright &copy; Digifigs Ltd. 2020
+      Copyright &copy; kayodeFad 2020 <i class="fab fa-github"></i>
     </footer>
 
     <script
@@ -168,31 +216,6 @@
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
       crossorigin="anonymous"
     ></script>
-    <script>
-      // Smooth Scrolling
-      $('a').on('click', function(event) {
-        if (this.hash !== '') {
-          event.preventDefault()
-
-          const hash = this.hash
-
-          $('html, body').animate(
-            {
-              scrollTop: $(hash).offset().top - 100
-            },
-            800
-          )
-        }
-      })
-
-        const ham = document.getElementById('hamburger-menu')
-        const navLinks = document.querySelector('.navbar ul')
-
-        ham.addEventListener('click', () => {
-          navLinks.classList.toggle('show-navlinks')
-          ham.classList.toggle('toggle')
-        })
-
-    </script>
+    <script src="/script.js"></script>
   </body>
 </html>

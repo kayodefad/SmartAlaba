@@ -48,8 +48,10 @@ header {
 /* Navbar */
 header .navbar {
   display: flex;
-  /* position: sticky; */
-  /* top:0; */
+  background: var(--header-color);
+  position: sticky;
+  top:0;
+  left: 0;
   color: #fff;
   justify-content: space-between;
   align-items: center;
@@ -121,12 +123,12 @@ header .navbar {
 .showcase-body .tools img {
   width: 400px;
   height: 500px;
-  animation: animate 2s ease-in-out infinite;
+  animation: animate 3s ease-in-out infinite;
 }
 
 @keyframes animate {
   to {
-    transform: translateY(7px);
+    transform: translateY(8px);
   }
 }
 
@@ -486,7 +488,7 @@ footer {
     right: -100%;
     top: 10vh;
     z-index: 2;
-    background: #180013;
+    background: #11010e;
     transition:   right 0.5s ease-in;
   }
   
